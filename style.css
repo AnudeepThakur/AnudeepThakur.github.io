@@ -1,25 +1,113 @@
-/* Add these styles to the end of your existing style.css */
+/* Reset some default styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
 
-/* Projects Section */
-#projects, #skills, #contact {
-    background-color: #f5f5f5;
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
     padding: 40px 0;
 }
 
-/* Skills Section */
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 0;
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.1em;
+}
+
+/* Projects Section Styles */
+#projects {
+    background-color: #ecf0f1;
+}
+
+#projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#projects li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Skills Section Styles */
+#skills {
+    background-color: #d4e6f1;
+}
+
 #skills ul {
     list-style-type: none;
     padding: 0;
 }
 
-/* Contact Section */
-#contact {
-    text-align: center;
+#skills li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
 }
 
-/* Responsive Container */
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 20px;
+/* Contact Section Styles */
+#contact {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
 }
