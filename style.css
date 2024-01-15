@@ -1,40 +1,25 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+/* Add these styles to the end of your existing style.css */
+
+/* Projects Section */
+#projects, #skills, #contact {
     background-color: #f5f5f5;
+    padding: 40px 0;
 }
 
+/* Skills Section */
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+}
+
+/* Responsive Container */
 .container {
-    width: 80%;
+    max-width: 960px;
     margin: 0 auto;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-}
-
-header h1 {
-    margin: 0;
-}
-
-section {
-    padding: 2em 0;
-}
-
-section h2 {
-    color: #333;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 0 20px;
 }
