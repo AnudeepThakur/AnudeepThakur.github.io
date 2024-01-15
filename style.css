@@ -30,15 +30,23 @@ header .circle {
     display: inline-block;
     width: 120px;
     height: 120px;
-    background-color: #fff;
+    background-color: #3498db; /* Change the color as needed */
     border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+header .circle span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 2em;
+    color: #fff;
 }
 
 header h1 {
     font-size: 3em;
-    color: #3498db;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -88,6 +96,11 @@ section p {
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#projects li:hover {
+    transform: scale(1.05);
 }
 
 /* Skills Section Styles */
@@ -109,6 +122,11 @@ section p {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+#skills li:hover {
+    transform: scale(1.05);
 }
 
 #skills li i {
