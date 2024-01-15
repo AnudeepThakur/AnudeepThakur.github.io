@@ -26,15 +26,20 @@ header {
     padding: 40px 0;
 }
 
-header h1 {
-    font-size: 3em;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    transition: color 0.3s ease-in-out;
+header .circle {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
 }
 
-header h1:hover {
-    color: #f39c12;
+header h1 {
+    font-size: 3em;
+    color: #3498db;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 header p {
@@ -83,11 +88,6 @@ section p {
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-#projects li:hover {
-    transform: scale(1.05);
 }
 
 /* Skills Section Styles */
@@ -98,19 +98,22 @@ section p {
 #skills ul {
     list-style-type: none;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    gap: 20px;
 }
 
 #skills li {
     background-color: #fff;
-    margin: 10px 0;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    text-align: center;
 }
 
-#skills li:hover {
-    transform: scale(1.05);
+#skills li i {
+    font-size: 2em;
+    color: #3498db;
 }
 
 /* Contact Section Styles */
@@ -130,6 +133,11 @@ footer {
 
 /* Responsive Styles */
 @media only screen and (max-width: 600px) {
+    header .circle {
+        width: 80px;
+        height: 80px;
+    }
+
     header h1 {
         font-size: 2.5em;
     }
